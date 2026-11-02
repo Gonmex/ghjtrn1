@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1024</width>
-    <height>828</height>
+    <height>825</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -34,7 +34,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>photos/free-icon-font-plus-3917757.png</normaloff>photos/free-icon-font-plus-3917757.png</iconset>
+      <normaloff>photos/plus.png</normaloff>photos/plus.png</iconset>
     </property>
    </widget>
    <widget class="QLineEdit" name="search_line">
@@ -61,7 +61,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>photos/free-icon-font-settings-3917110.png</normaloff>photos/free-icon-font-settings-3917110.png</iconset>
+      <normaloff>photos/settings.png</normaloff>photos/settings.png</iconset>
     </property>
    </widget>
    <widget class="QListWidget" name="colections_list">
@@ -93,8 +93,8 @@
    <widget class="QVideoWidget" name="video_widget" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>420</x>
+      <y>-30</y>
       <width>1481</width>
       <height>951</height>
      </rect>
@@ -103,8 +103,8 @@
    <widget class="QWidget" name="download_widget" native="true">
     <property name="geometry">
      <rect>
-      <x>-640</x>
-      <y>130</y>
+      <x>-990</x>
+      <y>790</y>
       <width>1021</width>
       <height>791</height>
      </rect>
@@ -273,6 +273,181 @@
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="btn_new_collection">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>750</y>
+      <width>321</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать коллекцию</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stats">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>720</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>photos/table.png</normaloff>photos/table.png</iconset>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_settings" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-300</x>
+      <y>-30</y>
+      <width>591</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <widget class="QComboBox" name="combo_box_color">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>80</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Тёмная</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Зелёная</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Светлая</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Неон</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="btn_autoplay">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CheckBox</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="line_path">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>190</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_path">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Путь до папки</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_autoplay">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Автовоспроизведение</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_color">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Цвет приложения</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_settings">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>НАСТРОЙКИ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_settings">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>400</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: rgba(0, 0, 0, 128);
+}</string>
+     </property>
+     <property name="text">
+      <string>MDPlayer</string>
+     </property>
+    </widget>
+   </widget>
    <zorder>search_line</zorder>
    <zorder>btn_settings</zorder>
    <zorder>colections_list</zorder>
@@ -280,6 +455,9 @@
    <zorder>btn_new</zorder>
    <zorder>video_widget</zorder>
    <zorder>download_widget</zorder>
+   <zorder>btn_new_collection</zorder>
+   <zorder>btn_stats</zorder>
+   <zorder>widget_settings</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
